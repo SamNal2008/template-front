@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.scss';
-import Footer from './common/Footer';
-import Header from './common/Header';
-import InternalErrorPage from './error/InternalError';
-import NotFoundPage from './error/NotFound';
+import Footer from './components/common/Footer';
+import Header from './components/common/Header';
+import InternalErrorPage from './pages/InternalError';
+import NotFoundPage from './pages/NotFound';
 import Home from './Home';
 
 function App() {
   return (
       <BrowserRouter>
         <Header/>
-        <main>
+        <main style={{height: '80vh'}}>
           <Routes>
             <Route path='home' element={<Home/>} />
             <Route path='internal_error' element={<InternalErrorPage/>} />

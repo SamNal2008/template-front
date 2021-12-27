@@ -1,0 +1,32 @@
+@import '../variables';
+
+.header {
+  background-color: $primary;
+  height: 10vh;
+  color: white;
+  background: #1abc9c;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:active {
+  font-weight: bolder;
+}
+
+.link:hover {
+  font-weight: bold;
+}
